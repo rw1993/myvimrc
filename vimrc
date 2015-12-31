@@ -17,13 +17,14 @@ Plugin 'L9'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'majutsushi/tagbar'
 Plugin 'ervandew/supertab'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'nvie/vim-flake8'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ianva/vim-youdao-translater'
 Plugin 'mattn/invader-vim'
 Plugin 'AshyIsMe/2048'
 Plugin 'vim-game-of-life'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'mattn/emmet-vim'
 call vundle#end()            " required
 filetype plugin on
 
@@ -37,3 +38,5 @@ map  <F6> :NERDTreeToggle<CR>
 vnoremap <silent> <C-T> <Esc>:Ydv<CR> 
 nnoremap <silent> <C-T> <Esc>:Ydc<CR> 
 noremap <leader>yd :Yde<CR>
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
