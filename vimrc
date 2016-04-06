@@ -25,6 +25,7 @@ Plugin 'AshyIsMe/2048'
 Plugin 'vim-game-of-life'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'mattn/emmet-vim'
+Plugin 'amoffat/snake'
 call vundle#end()            " required
 filetype plugin on
 
